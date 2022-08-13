@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+table,
+    th,
+    td {
+      border: 1px solid black;
+      border-collapse: collapse;
+      text-align: center;
+    }
+    tr:nth-child(2n + 1) {
+        background-color: lightblue;
+    }
+    tr td:last-child {
+        text-align: left;
+    }
+    div {
+        display: flex;
+        align-items: flex-start;
+        gap: 0 100px;
+    }
+</style>
+<body>
+    <h1 style="color: orange; text-align: center;">Các món ngon Hà Nội</h1>
+
+    <br>
+
+    <div>
+        <img width="400px" src="./Image/test.jpg" alt="test image">
+        <table>
+            <tr style="background-color: orange;">
+                <th style="width: 100px">STT</th>
+                <th style="width: 200px">Tên món ăn</th>
+            </tr>
+            <tr>
+                <td>1.</td>
+                <td>Xôi</td>
+            </tr>
+            <tr>
+                <td>2.</td>
+                <td>Mì tôm</td>
+            </tr>
+            <tr>
+                <td>3.</td>
+                <td>Bánh mì</td>
+            </tr>
+            
+        </table>
+    </div>
+</body>
+</html>
