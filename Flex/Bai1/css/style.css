@@ -1,0 +1,95 @@
+* {
+    padding: 0;
+    margin: 0;
+    font-family: 'Open Sans', sans-serif;
+}
+
+.main {
+    max-width: 800px;
+    margin: 30px auto 50px;
+}
+
+.box {
+    border: 2px solid;
+}
+.heading {
+    padding: 5px 15px;
+    border-bottom: 2px solid;
+    font-weight: 600;
+}
+.flex-content {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding: 30px;
+    gap: 30px 40px;
+}
+
+.flex-content > div {
+    border: 2px solid;
+}
+
+.box-1 .type1 {
+    background-color: #E68E8D;
+    height: 100px;
+    width: 150px;
+}
+
+.box-1 .type2 {
+    background-color: #95BDF8;
+    height: 100px;
+    width: calc(100% - 200px);
+}
+
+.box-1 .type3 {
+    width: 100%;
+    background-color: #FFE18E;
+    height: 100px;
+}
+
+.box-2 {
+    margin-top: 50px;
+}
+
+.box-2 .type1 {
+    background-color: #8371BB;
+    height: 100px;
+    width: 100%;
+}
+
+.box-2 .flex-content {
+    gap: 15px 15px;
+}
+
+.box-2 .type2 {
+    width: 230px;
+    height: 300px;
+}
+.box-3 {
+    margin-top: 50px;
+}
+
+.box-3 .type1 {
+    background-color: #089411;
+    height: 100px;
+    width: 100%;
+}
+
+.box-3 .flex-content {
+    gap: 15px 15px;
+}
+
+.box-3 .type2 {
+    width: 230px;
+    height: 200px;
+}
+.box-3 .type3 {
+    width: 230px;
+    height: 200px;
+}
+
+.box-3 .type3 img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
