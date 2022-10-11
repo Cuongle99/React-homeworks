@@ -58,10 +58,10 @@ const chuanHoa = s => {
     return b.join(" ");
 }
 
-students.map(item => {
+let result = students.filter(item => {
     item.firstName = chuanHoa(item.firstName);
     item.lastName = chuanHoa(item.lastName);
-    if (searchName(item.firstName)) {
-        console.log(item);
-    }
+    return searchName(item.firstName)
 })
+
+console.log(result);

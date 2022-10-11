@@ -1,0 +1,11 @@
+1.thêm phần tử vào mảng:
+    arr.push() :    - thêm phần tử vào cuối arr.
+                    - thay đôi arr gốc.
+                    - hàm push trả về giá trị bằng dộ dài của arr.
+
+    note: cách thêm 1 phần tử vào đầu || cuối arr mà k thay đổi arr gốc:
+        newArr = [...arr, newElement] => trả về 1 mảng mới.
+
+    - unshift() : thêm ở đầu => dộ dài mảng
+    - shift: xóa ở đầu => phần tử đã xóa
+    - pop: xóa ở cuổi => phần tử đã xóa

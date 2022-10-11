@@ -49,8 +49,8 @@ const searchName = (a, b) => {
 
 
 
-students.map(item => {
-    if (searchName(item.lastName, 'Do')) {
-        console.log(item);
-    }
+let result =  students.filter(item => {
+    return searchName(item.lastName, 'Do')
 })
+
+console.log(result);

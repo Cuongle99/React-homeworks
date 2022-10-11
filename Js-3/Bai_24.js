@@ -18,10 +18,8 @@ const isSNT = a => {
 }
 
 const kiemTraSNT = s => {
-    let b = s.filter(item => {
-        if (isSNT(item)) {
-            return item
-        }
+    let b = s.filter( (item, index) => {
+        return isSNT(item)
     })
     return b
 }

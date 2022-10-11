@@ -5,24 +5,19 @@
 let a = [1, 2, 3, 4, 6, 7];
 
 
-const kiemTra = (a, k) =>  {
-    // a.sort((x, y) => x - y);
-    let min = [];
-    min[0] = a[0]
-    let kc = Math.abs(k - a[0])
+const kiemTra2 = (a, k) =>  {
 
-    for (let i = 1; i < a.length; i++) {
-        if (Math.abs(a[i] - k) < kc) {
-            min[0] = a[i];
-            kc = Math.abs(a[i] - k);
-        } else if (Math.abs(a[i] - k) === kc) {
-            min[1] = a[i];
-        }
-         else {
-            break;
-        }
-    }
-    return `phan tu co khoang cach lon nhat voi ${k} la ${min}`
+    let b = a.map((item, index) => {
+        return Math.abs(item - k);
+    })
+    let min =  Math.min(...b);
+
+    let  result = a.filter((item, index) => {
+        if (item - min == k || item + min == k) return item
+    })
+
+    return result
+
 }
 
-console.log(kiemTra(a, 5));
+console.log(kiemTra2(a, 5));

@@ -54,16 +54,9 @@ let students = [
 ];
 
 
+
 const sapXep = arr => {
-    return arr.sort((a, b) => {
-        if (a.firstName == b.firstName) {
-            return 0
-        } else if (a.firstName > b.firstName) {
-            return 1
-        } else {
-            return -1
-        }
-    })
+    return arr.sort((a, b) => a.firstName.localeCompare(b.firstName));
 }
 
 console.log(sapXep(students));
